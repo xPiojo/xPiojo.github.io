@@ -5,20 +5,66 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
     background-color: #F5F5F5;
 }
 
-h1 {
-    font-size: 48px;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0,5rem;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 0.2rem 3%;
+    background-color: #D6D5B3
+
+}
+
+.logo {
+    font-size: 1.3rem;
     font-weight: bold;
     padding: 20px 15px;
     color: #333333;
 }
 
-#clasesFront h2 {
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    margin: 2rem;
+}
+
+.navlist a{
+    color: black;
+    font-size: 1.3rem;
+    transition: border-bottom 0.4s ease
+}
+
+.navlist a:hover{
+    border-bottom: #4285F4 solid 1px;
+}
+
+#menu-icon {
+	color: black;
+	font-size: 1rem;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+#clasesFront {
+    margin-top: 8rem;
+}
+
+#clasesFront h2, #ejercicios h2 {
     margin: 30px 20px;
     margin-bottom: 5px;
     color: #333333;
@@ -74,4 +120,79 @@ article p {
     transform: translateY(-2.5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
+}
+
+.cajaEjercicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    margin: 3rem 3rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cajita {
+    display: flex;
+    width: 10rem;
+    height: 5rem;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cajita a{
+    display: flex;
+    color: white;
+    background-color: #4285F4;
+    width: 80%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 990px) {
+    #menu-icon {
+		display: block;
+        font-size: 3rem;
+	}
+	header{
+		padding: 0;
+        background-color: #D6D5B3;
+	}
+	.navlist {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 220px;
+        border-radius: 30px;
+        gap: 0;
+        margin: 1px 5px;
+		height: auto;
+		background: #bbb;
+		opacity: 0.8;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 30px 20px;
+		transition: all .55s ease;
+	}
+	.navlist a {
+		margin-left: 0;
+		display: block;
+		margin: 18px 0;
+	}
+    .navlist a:hover{
+        border-bottom: #4285F4 solid 1px;
+    }
+	.navlist.open {
+		right: 0%;
+	}
 }
