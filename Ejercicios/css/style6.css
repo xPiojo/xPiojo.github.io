@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+#logo img {
+    width: 200px;
+}
+
+.box-title {
+    background-color: #c4c4c4;
+    color: #005677;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.box-title#title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+#datosPersonales ul{
+    padding: 15px 30px;
+    margin-left: 10px;
+}
+
+.box-information {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px;
+    padding: 5px 15px;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.footer-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #005677;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.social-icons {
+    padding-left: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.social-icons a:hover{
+    opacity: 0.5;
+}

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+#logo img{
+    width: 130px;
+}
+
+nav ul, #indice ul{
+    list-style: none;
+}
+
+#banner img {
+    width: 300px;
+}
+
+#instrucciones p {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+}
