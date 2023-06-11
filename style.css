@@ -152,11 +152,21 @@ article p {
 .cajita a{
     display: flex;
     color: white;
-    background-color: #4285F4;
+    background-color: #395132;
     width: 80%;
     height: 60%;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cajita a:hover{
+    transform: translateY(-2.5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 footer {
