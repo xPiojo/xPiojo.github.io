@@ -61,10 +61,10 @@ header{
 }
 
 #clasesFront {
-    margin-top: 8rem;
+    margin-top: 8.2rem;
 }
 
-#clasesFront h2, #ejercicios h2 {
+h2 {
     margin: 30px 20px;
     margin-bottom: 5px;
     color: #333333;
