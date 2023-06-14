@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Clase 6</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link
+	  rel="stylesheet"
+	  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+	/>
+  </head>
+  <body>
+	<header>
+	  <figure class="logo">
+		<a href="https://untref.edu.ar" target="_blank">
+		  <img src="./img/untref.png" alt="Logo de Untref" />
+		</a>
+	  </figure>
+
+	  <nav>
+		<ul class="navlist">
+		  <li><a href="./index.html">Inicio</a></li>
+		  <li><a href="./nosotros.html">Nosotros</a></li>
+		  <li><a href="#">Servicios</a></li>
+		  <li><a href="#">Contacto</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	  </nav>
+	</header>
+
+	<section id="banner">
+	  <img src="./img/animals-g9ad50c313_1280.jpg" alt="Perritos y gatitos" />
+	</section>
+
+	<section id="principalTitle">
+	  <h1>Nuestras Mascotas</h1>
+	</section>
+
+	<section id="mascotas">
+	  <article>
+		<img src="./img/puppy-2785074_960_720.jpg" alt="Perrito acostado mirando hacia arriba" />
+	  </article>
+	  <article>
+		<img src="./img/cat-2083492_960_720.jpg" alt="gatito bonito" />
+	  </article>
+	  <article>
+		<img src="./img/puppy-1903313_960_720.jpg" alt="cachorrito blanco acostado mirando la camara" />
+	  </article>
+	</section>
+	<hr>
+	<section id="formContacto">
+		<h2>Contactanos</h2>
+		<form action="datos.php" method="get">
+			<div class="boxForm">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" required placeholder="Indique su nombre" minlength="3">
+			</div>
+			<div class="boxForm">
+				<label for="apellido">Apellido:</label>
+				<input type="text" name="apellido" id="apellido" required placeholder="Indique su apellido">
+			</div>
+			<div class="boxForm">
+				<label for="comentarios">Comentarios</label>
+				<textarea name="comentario" id="comentarios" cols="30" rows="10" required placeholder="Indique sus comentario" maxlength="150"></textarea>
+			</div>
+			<div class="btn-submit">
+				<!-- <input type="submit" value="Enviar Comentarios"> -->
+				<button type="submit">Enviar Comentarios</button>
+			</div>
+		</form>
+	</section>
+
+	<footer>
+	  <div id="contacto">
+		<table>
+			<tr>
+				<th>Dirección:</th>
+				<th>Correo electronico:</th>
+				<th>Telefono:</th>
+			</tr>
+			<tr>
+				<td>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Architecto, adipisci?</p>
+				</td>
+				<td><a href="mailto:correo@correo.com">correo@correo.com</a></td>
+				<td><a href="tel:1199999999">Llamanos!</a></td>
+			</tr>
+		  </tr>
+		</table>
+	  </div>
+	</footer>
+
+	<script src="./js/prueba.js"></script>
+  </body>
+</html>
